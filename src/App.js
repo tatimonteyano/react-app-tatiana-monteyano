@@ -6,7 +6,7 @@ function BasicExample() {
   return ( 
   <>
   <NavBar/>
-  <ItemsListContainer greetings ="hola, lo logré!"/>
+  <ItemsListContainer greetings ="Bienvenidos al mundo de Milho y su Pet shop"/>
   </>
   );
 }

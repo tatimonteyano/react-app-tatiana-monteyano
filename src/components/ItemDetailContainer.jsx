@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Container from 'react-bootstrap/Container'
 import data from "../data/products.json"
-import { ItemList } from './ItemList';
+import { ItemDetail } from './ItemDetail';
 //import { ItemCount } from './ItemCount'
 export const ItemsListContainer = (props) =>{
     const [products, setProducts] = useState ([]);
@@ -14,12 +14,12 @@ export const ItemsListContainer = (props) =>{
     console.log(products);
     return (
        <Container className="mt-4">
-  <h1>{props.greetings}</h1>
+  <h1>Detalle</h1>
 <div style={{ display: "flex", flexWrap: "wrap" }}>
 <ItemList products = { products}/>
 </div>
+<ItemDetail product={product}/>
      </Container>
      
 );
 };
-
