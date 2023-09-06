@@ -9,7 +9,7 @@ export const ItemsListContainer = (props) =>{
         const promise = new Promise ((resolve, reject) => {
             setTimeout (() => resolve (data), 2000);
         });
-        promise.then(data => setProducts (data));
+        promise.then((data) => setProducts (data));
     }, []);
     console.log(products);
     return (
